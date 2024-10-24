@@ -1,0 +1,216 @@
+/* ****************** App.css ********************* */
+
+/* General app layout */
+body
+{
+    font-family: Arial, sans-serif;
+    background: url('../assets/hiTunez.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.app-container
+{
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    color: white;
+}
+
+/* Header Styles */
+.header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(0, 0%, 24%, 0.3); /* Grey with opacity background similar to Apple */
+    padding: 40px 0;
+    position: relative;
+}
+
+.header .header-text
+{
+    text-align: center;
+    color: white;
+}
+
+.header h1
+{
+    font-size: 3rem;
+    margin: 0;
+}
+
+.header p
+{
+    font-size: 1.5rem;
+    margin: 10px 0 0;
+    color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+}
+
+/* Home Logo */
+.home-link
+{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.home-logo
+{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* Search Form */
+.search-form
+{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px; /* Adds some space from the top */
+}
+
+/* Input, Select, and Button Styles */
+.search-form input,
+.search-form select,
+.search-form button
+{
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 20px; /* Rounded input and button */
+    border: 1px solid #ccc; /* Add a light border */
+    outline: none; /* Remove default outline */
+}
+
+/* Optional: Add some padding and styling to make the search form stand out */
+.search-form input
+{
+    width: 250px; /* Set width for the input field */
+}
+
+.search-form button
+{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-form button:hover
+{
+    background-color: #0056b3;
+}
+
+/* Search Results and Favourites */
+.results-container,
+.favourites-container
+{
+    margin-bottom: 30px;
+    background-color: hsla(0, 0%, 24%, 0.3);
+    padding: 20px;
+    border-radius: 12px;
+    color: white;
+}
+
+.results-container h2,
+.favourites-container h2
+{
+    color: #f8f9fa;
+    margin-bottom: 15px;
+}
+
+/* No Results or Favourites Found */
+.no-results
+{
+    text-align: center;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Horizontal Scroll for Results and Favourites */
+.horizontal-scroll
+{
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+}
+
+.horizontal-scroll::-webkit-scrollbar
+{
+    height: 8px;
+}
+
+.horizontal-scroll::-webkit-scrollbar-thumb
+{
+    background-color: #888;
+    border-radius: 10px;
+}
+
+.horizontal-scroll::-webkit-scrollbar-thumb:hover
+{
+    background-color: #555;
+}
+
+/* Media Card Styles */
+.media-card
+{
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease; /* Animation for hover effect */
+}
+
+.media-card:hover
+{
+    transform: translateY(-5px); /* Lift the card slightly on hover */
+}
+
+.media-card img
+{
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.media-card h3,
+.media-card p
+{
+    margin: 10px 0;
+    color: #333;
+}
+
+.media-card button
+{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.media-card button:hover
+{
+    background-color: #0056b3;
+}
+
+/* Additional Styling for the Favourites Section */
+.favourites-container .media-card
+{
+    background-color: #e9ecef; /* Slightly different background for favourites */
+}
+
+/* Fallback Image Styling */
+.media-card img
+{
+    object-fit: cover; /* Ensure the image fits well within its container */
+    width: 100%;
+    height: 150px; /* Set a fixed height to maintain consistency */
+}

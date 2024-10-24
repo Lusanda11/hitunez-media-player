@@ -1,0 +1,52 @@
+/* ****************** FavoriteList.css ********************* */
+
+/* Container for no favorites message */
+.no-favourites-container
+{
+    text-align: center;
+    margin-top: 20px;
+    background-color: hsla(0, 0%, 24%, 0.3);
+    height: 20px;
+}
+
+/* Container to enable horizontal scrolling */
+.favourites-container
+{
+    margin-top: 20px;
+}
+
+.favourites-scroll
+{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 10px;
+    gap: 15px;
+}
+
+.favourites-item
+{
+    flex: 0 0 auto;
+    width: 150px;
+    text-align: center;
+}
+
+.favourites-image
+{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.favourites-info
+{
+    margin-top: 10px;
+}
+
+.remove-icon
+{
+    color: red;
+    cursor: pointer;
+    margin-top: 5px;
+}
